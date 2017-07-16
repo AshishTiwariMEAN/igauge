@@ -26,6 +26,11 @@ app.get('/times', function(request, response) {
   response.send(result);
 });
 
+app.get('/gittest', function(request, response) {
+    var result = 'git repo of ashish T testing';
+    response.send(result);
+});
+
 app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
+  console.log('ashish Node app is running on port', app.get('port'));
 });
